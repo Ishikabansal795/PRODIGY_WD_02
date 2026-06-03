@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Glassmorphism Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ambient light glow behind the card -->
+    <div class="glow-bg"></div>
+
+    <div class="stopwatch-card">
+        <header>
+            <h2>CHRONO</h2>
+            <div class="status-indicator" id="statusDot"></div>
+        </header>
+        
+        <!-- Timer Main Area -->
+        <div class="display-wrapper">
+            <div class="display" id="display">00:00:00<span class="ms">.00</span></div>
+        </div>
+        
+        <!-- Premium Action Layout -->
+        <div class="controls-grid">
+            <button id="startBtn" class="btn btn-start">Start</button>
+            <button id="pauseBtn" class="btn btn-pause" disabled>Pause</button>
+            <button id="lapBtn" class="btn btn-lap" disabled>Lap</button>
+            <button id="resetBtn" class="btn btn-reset">Reset</button>
+        </div>
+
+        <!-- Scrollable Lap Terminal -->
+        <div class="laps-section">
+            <div class="laps-header">
+                <span>History Log</span>
+                <span id="lapCounter" class="lap-counter">0 Laps</span>
+            </div>
+            <div class="laps-viewport">
+                <ul id="lapsList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
